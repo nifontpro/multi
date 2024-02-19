@@ -12,6 +12,11 @@
                   <project path="$PROJECT_DIR$/buildSrc" />
                 </projects>
               </build>
+              <build path="$PROJECT_DIR$/buildSrc/buildSrc" name="buildSrc">
+                <projects>
+                  <project path="$PROJECT_DIR$/buildSrc/buildSrc" />
+                </projects>
+              </build>
             </builds>
           </compositeBuild>
         </compositeConfiguration>
@@ -21,8 +26,10 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/base" />
+            <option value="$PROJECT_DIR$/base/data" />
             <option value="$PROJECT_DIR$/base/rest" />
             <option value="$PROJECT_DIR$/buildSrc" />
+            <option value="$PROJECT_DIR$/buildSrc/buildSrc" />
             <option value="$PROJECT_DIR$/cor" />
           </set>
         </option>

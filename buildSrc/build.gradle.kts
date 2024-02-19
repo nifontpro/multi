@@ -3,7 +3,7 @@ plugins {
 }
 
 dependencies {
-// Kotlin
+	// Kotlin
 	implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:${Kotlin.VERSION}")
 	implementation("org.jetbrains.kotlin:kotlin-allopen:${Kotlin.VERSION}")
 
