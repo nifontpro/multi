@@ -1,5 +1,5 @@
 plugins {
-	id("spring-setup")
+	id("spring-core")
 }
 
 dependencies {

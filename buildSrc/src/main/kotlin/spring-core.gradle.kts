@@ -8,10 +8,12 @@ plugins {
 }
 
 kotlin {
-	java.sourceCompatibility = JavaVersion.VERSION_17
+	java.sourceCompatibility = Jvm.sourceCompatibilityVersion
 }
 
 dependencies {
+	implementation("org.springframework.boot:spring-boot-starter")
+
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 	implementation("io.projectreactor.kotlin:reactor-kotlin-extensions")
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
@@ -25,7 +27,7 @@ dependencies {
 tasks.withType<KotlinCompile> {
 	kotlinOptions {
 		freeCompilerArgs = listOf("-Xjsr305=strict")
-		jvmTarget = "17"
+		jvmTarget = Jvm.TARGET_VERSION
 	}
 }
 
