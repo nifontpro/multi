@@ -2,8 +2,6 @@ plugins {
 	`kotlin-dsl`
 }
 
-val springBootVersion: String by project
-
 dependencies {
 // Kotlin
 	implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:${Kotlin.VERSION}")
@@ -12,6 +10,8 @@ dependencies {
 	// Spring Boot
 	implementation("org.springframework.boot:spring-boot-gradle-plugin:${Spring.BOOT_VERSION}")
 
+	// https://plugins.gradle.org/plugin/org.jetbrains.kotlin.plugin.jpa
+	implementation("org.jetbrains.kotlin:kotlin-noarg:${Kotlin.VERSION}") // kotlin("plugin.jpa")
 }
 
 kotlin {

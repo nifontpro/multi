@@ -1,3 +1,3 @@
 object Kotlin {
-	const val VERSION = "1.9.20"
+	const val VERSION = "1.9.22"
 }

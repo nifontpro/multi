@@ -10,5 +10,6 @@ rootProject.name = "multi"
 
 include("cor")
 include("base")
+include("base:data")
 include("base:rest")
 
